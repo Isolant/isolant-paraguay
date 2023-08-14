@@ -4,9 +4,8 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
-  style: ['normal', 'italic'],
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
   display: 'swap',
   variable: '--font-poppins',
 })
@@ -24,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${poppins.variable}`}>
       <MainHead />
-      <body className={`${poppins.variable} font-sans`}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
