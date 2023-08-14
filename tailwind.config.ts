@@ -7,11 +7,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'sans': ['var(--font-poppins)', 'ui-sans-serif', 'system-ui']
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        lightBlue: '#15BEF0',
+        darkBlue: '#263A48',
+        secondary: '#EE2E27',
       },
     },
   },
