@@ -8,7 +8,7 @@ import Image from "next/image";
 
 import Button from '@/components/Button';
 
-import styles from '@/components/Slider.module.css';
+import styles from '@/components/Homepage/Slider.module.css';
 
 const Slider = () => {
   return(
