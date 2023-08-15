@@ -1,14 +1,15 @@
 import Link from "next/link";
 
-const Button = ({ isExternal, src, children, classes }: {
-  isExternal: boolean;
-  src: string;
+const Button = ({ isExternal, src, type, children, classes }: {
+  isExternal?: boolean;
+  src?: string;
+  type?: string;
   children: React.ReactNode;
   classes: string;
 }) => {
     const styles = `px-6 py-4 text-sm font-medium tracking-wider uppercase rounded-full inline-flex items-center gap-2 transition ease-in-out duration-75 ${classes} `;
 
-    if(isExternal) {
+    if(src && isExternal === true) {
       return (
         <a
           href={src}
@@ -19,7 +20,7 @@ const Button = ({ isExternal, src, children, classes }: {
           {children}
         </a>
       )
-    } else {
+    } else if(src && isExternal === false) {
       return (
         <Link
           href={src}
@@ -27,6 +28,15 @@ const Button = ({ isExternal, src, children, classes }: {
         >
           {children}
         </Link> 
+      )
+    } else {
+      return (
+        <button
+          type={type}
+          className={styles}
+        >
+          {children}
+        </button>
       )
     }
 }
