@@ -15,7 +15,7 @@ const Header = () => {
           href="/"
         >
           <Image
-            src="/images/logos/logo.svg"
+            src="/images/logos/logo-color.svg"
             alt="Isolant Aislantes"
             width={90}
             height={32}

@@ -4,6 +4,7 @@ import About from '@/components/Homepage/About';
 import Products from '@/components/Homepage/Products';
 import Map from '@/components/Homepage/Map';
 import ContactForm from '@/components/Homepage/ContactForm';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Products />
       <Map />
       <ContactForm />
+      <Footer />
     </main>
   )
 }
