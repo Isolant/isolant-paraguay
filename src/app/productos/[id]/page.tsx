@@ -8,6 +8,7 @@ import Hero from '@/components/Products/Hero';
 import Benefits from '@/components/Products/Benefits';
 import Details from '@/components/Products/Details';
 import {TechnicalInformation, TechnicalInformationItem} from '@/components/Products/TechnicalInformation';
+import {Instructions} from '@/components/Products/Instructions';
 import Footer from '@/components/Footer';
 
 const components = {
@@ -16,6 +17,7 @@ const components = {
   Details,
   TechnicalInformation,
   TechnicalInformationItem,
+  Instructions,
 }
 
 export default function Product({ params }: { 

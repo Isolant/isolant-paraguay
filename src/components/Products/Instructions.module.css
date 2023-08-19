@@ -1,0 +1,7 @@
+.InstructionsWrapper p {
+  @apply hidden;
+}
+
+.InstructionsWrapper:global(.active-1) p:first-child, .InstructionsWrapper:global(.active-2) p:nth-child(2), .InstructionsWrapper:global(.active-3) p:nth-child(3), .InstructionsWrapper:global(.active-4) p:nth-child(4), .InstructionsWrapper:global(.active-5) p:nth-child(5), .InstructionsWrapper:global(.active-6) p:nth-child(6) {
+  @apply block;
+}

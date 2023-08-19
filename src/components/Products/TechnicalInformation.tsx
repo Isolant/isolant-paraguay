@@ -8,7 +8,7 @@ export const TechnicalInformation = ({ product, productImage, children }: {
 }) => {
   return (
     <section
-      className="px-4 md:px-6 lg:px-8 xl:px-16 py-12 sm:py-16 md:py-24 relative"
+      className="px-4 md:px-6 lg:px-8 xl:px-16 py-12 sm:py-16 md:py-24 relative bg-gray-50"
     >
       <ul className="mx-auto container grid lg:grid-cols-6 gap-8">
         <li className="max-w-xs lg:col-span-2 relative self-start">
