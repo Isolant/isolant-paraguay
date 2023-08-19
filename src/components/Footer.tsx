@@ -15,7 +15,7 @@ const Footer = () => {
             height={32}
           />
         </Link>
-        <div className="text-center text-white text-xs flex flex-col gap-1 items-center">
+        <div className="text-center text-white text-xs flex flex-col gap-1 items-center font-poppins-regular">
           <p>
             Villeta, camino a Nueva Italia 9865, Paraguay
           </p>
@@ -34,7 +34,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col gap-1">
-          <span className="text-xs text-white">Seguinos en las redes:</span>
+          <span className="text-xs text-white font-poppins-regular">Seguinos en las redes:</span>
           <ul className="flex justify-center gap-3 mt-1">
             <li>
               <a
