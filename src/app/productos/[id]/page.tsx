@@ -24,7 +24,6 @@ export default function Product({ params }: {
     <MDXProvider components={components}>
       <main>
         <Header
-          isHomepage={false}
           active="products"
         />
         <ProductContent />

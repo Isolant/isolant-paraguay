@@ -9,9 +9,7 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main id="top">
-      <Header
-        isHomepage={true}
-      />
+      <Header />
       <Slider />
       <About />
       <Products />

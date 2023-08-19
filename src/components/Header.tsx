@@ -5,8 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = ({ isHomepage, active }: {
-  isHomepage: boolean,
+const Header = ({ active }: {
   active?: string
 }) => {
   const [isOpen, setIsOpen] = useState(false);
