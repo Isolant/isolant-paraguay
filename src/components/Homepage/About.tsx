@@ -6,8 +6,8 @@ const About = () => {
   return(
     <section className="grid md:grid-cols-2">
       <div className="flex flex-col gap-2 items-start justify-center p-4 md:p-8 lg:p-16 xl:p-24 order-last md:order-none">
-        <h3 className="font-sans font-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestra empresa</h3>
-        <p className="max-w-md font-sans text-gray-600 font-regular">
+        <h3 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestra empresa</h3>
+        <p className="max-w-md font-poppins-regular text-gray-600">
           Isolant, la empresa de aislantes de espuma de polipropeno más grande de Argentina, llegó a Paraguay.
         </p>
         <Button

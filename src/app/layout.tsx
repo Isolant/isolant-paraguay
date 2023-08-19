@@ -1,13 +1,24 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import localFont from 'next/font/local'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+const poppinsRegular = localFont({
+  src: '../fonts/poppins-regular.woff2',
   display: 'swap',
-  variable: '--font-poppins',
+  variable: '--font-poppins-regular',
+})
+
+const poppinsMedium = localFont({
+  src: '../fonts/poppins-medium.woff2',
+  display: 'swap',
+  variable: '--font-poppins-medium',
+})
+
+const poppinsSemibold = localFont({
+  src: '../fonts/poppins-semibold.woff2',
+  display: 'swap',
+  variable: '--font-poppins-semibold',
 })
 
 import MainHead from '@/components/MainHead';
@@ -23,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${poppins.variable}`}>
+    <html lang="es" className={`${poppinsRegular.variable} ${poppinsSemibold.variable} ${poppinsMedium.variable}`}>
       <MainHead />
       <body>{children}</body>
     </html>

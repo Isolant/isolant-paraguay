@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['var(--font-poppins)']
+        'poppins-regular': ['var(--font-poppins-regular)'],
+        'poppins-medium': ['var(--font-poppins-medium)'],
+        'poppins-semibold': ['var(--font-poppins-semibold)']
       },
       colors: {
         lightBlue: '#15BEF0',

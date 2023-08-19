@@ -76,8 +76,8 @@ const Products = () => {
     <section className="relative bg-gray-50">
       <div className="relative mx-auto container px-4 pt-8 md:pt-16 lg:pt-24 xl:pt-32">
         <div className="flex flex-col gap-2 text-center items-center">
-          <h3 className="font-sans font-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestros productos</h3>
-          <p className="max-w-lg font-sans text-gray-600 font-regular">
+          <h3 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestros productos</h3>
+          <p className="max-w-lg font-poppins-regular text-gray-600">
             Isolant, la empresa de aislantes de espuma de polipropeno más grande de Argentina, llegó a Paraguay.
           </p>
         </div>
@@ -99,7 +99,7 @@ const Products = () => {
         className="w-full absolute -bottom-8 bg-gradient-to-t from-gray-50 h-24 z-10 flex flex-col items-center justify-center gap-1 group"
         onClick={() => setLimit(limit === 6 ? -1 : 6)}
       >
-        <span className="text-darkBlue font-sans font-medium uppercase tracking-wider text-xs group-hover:opacity-80 transition ease-in-out duration-100">
+        <span className="text-darkBlue font-poppins-medium uppercase tracking-wider text-xs group-hover:opacity-80 transition ease-in-out duration-100">
           Ver
           {limit === 6 ? ' más ' : ' menos '}
           productos

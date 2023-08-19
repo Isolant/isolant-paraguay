@@ -6,8 +6,8 @@ const ContactForm = () => {
   return(
     <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32">
       <div className="flex flex-col gap-2 text-center items-center">
-        <h5 className="font-sans font-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Contactanos</h5>
-        <p className="max-w-lg font-sans text-gray-600 font-regular">
+        <h5 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Contactanos</h5>
+        <p className="max-w-lg font-poppins-regular text-gray-600">
           Si tenes alguna consulta acerca de nuestros productos, contactate con nosotros debajo.
         </p>
       </div>

@@ -16,14 +16,14 @@ export default function Input({
   return (
     <div>
       {labelVisible !== false &&
-        <label className="text-gray-800 font-sans font-regular mb-2" htmlFor={id}>{label}</label>
+        <label className="text-gray-800 font-poppins-regular mb-2" htmlFor={id}>{label}</label>
       }
       <input
         type={type}
         id={id}
         placeholder={placeholder}
         required={required}
-        className="font-sans text-gray-600 font-regular border border-gray-300 p-3 rounded-xl w-full"
+        className="font-poppins-regular text-gray-600 border border-gray-300 p-3 rounded-xl w-full"
       />
     </div>
   )
