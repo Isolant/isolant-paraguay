@@ -74,7 +74,7 @@ const Products = () => {
 
   return(
     <section className="relative bg-gray-50" id="productos">
-      <div className="relative mx-auto container px-4 pt-8 md:pt-16 lg:pt-24 xl:pt-32">
+      <div className={`relative mx-auto container px-4 pt-8 md:pt-16 lg:pt-24 xl:pt-32 ${limit === products.length ? 'pb-8 md:pb-16 lg:pb-24 xl:pb-32' : ''}`}>
         <div className="flex flex-col gap-2 text-center items-center">
           <h3 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestros productos</h3>
           <p className="max-w-lg font-poppins-regular text-gray-600">
@@ -96,15 +96,15 @@ const Products = () => {
         </ul>
       </div>
       <button
-        className="w-full absolute -bottom-8 bg-gradient-to-t from-gray-50 h-24 z-10 flex flex-col items-center justify-center gap-1 group"
-        onClick={() => setLimit(limit === 6 ? -1 : 6)}
+        className={`w-full absolute bottom-0 bg-gradient-to-t from-gray-50 h-24 z-10 flex flex-col items-center justify-center gap-1 group`}
+        onClick={() => setLimit(limit === 6 ? products.length : 6)}
       >
         <span className="text-darkBlue font-poppins-medium uppercase tracking-wider text-xs group-hover:opacity-80 transition ease-in-out duration-100">
           Ver
           {limit === 6 ? ' más ' : ' menos '}
           productos
         </span>
-        <svg className={`group-hover:opacity-80 relative transform ${limit === -1 ? 'order-first rotate-180' : 'top-1 animate-bounce'}`} fill="none" height="8" viewBox="0 0 14 8" width="14" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="m.292893.292893c.390524-.3905241 1.023687-.3905241 1.414217 0l5.29289 5.292897 5.2929-5.292897c.3905-.3905241 1.0237-.3905241 1.4142 0 .3905.390524.3905 1.023687 0 1.414217l-5.99999 6c-.39053.39052-1.02369.39052-1.41422 0l-5.999997-6c-.3905241-.39053-.3905241-1.023693 0-1.414217z" fill="#263a48" fillRule="evenodd"/></svg>
+        <svg className={`group-hover:opacity-80 relative transform ${limit === products.length ? 'order-first rotate-180' : 'top-1 animate-bounce'}`} fill="none" height="8" viewBox="0 0 14 8" width="14" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="m.292893.292893c.390524-.3905241 1.023687-.3905241 1.414217 0l5.29289 5.292897 5.2929-5.292897c.3905-.3905241 1.0237-.3905241 1.4142 0 .3905.390524.3905 1.023687 0 1.414217l-5.99999 6c-.39053.39052-1.02369.39052-1.41422 0l-5.999997-6c-.3905241-.39053-.3905241-1.023693 0-1.414217z" fill="#263a48" fillRule="evenodd"/></svg>
       </button>
     </section>
   )

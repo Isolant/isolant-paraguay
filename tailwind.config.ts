@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        'poppins-light': ['var(--font-poppins-light)'],
         'poppins-regular': ['var(--font-poppins-regular)'],
         'poppins-medium': ['var(--font-poppins-medium)'],
         'poppins-semibold': ['var(--font-poppins-semibold)']

@@ -27,7 +27,7 @@ const Map = () => {
   }, []);
 
   return isLoaded ? (
-    <section className="bg-gray-100 pt-8 relative">
+    <section className="bg-gray-100 relative">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
@@ -37,7 +37,7 @@ const Map = () => {
         <Marker
           label={{
             text: "Villeta, camino a Nueva Italia 9865, Paraguay",
-            className: "shadow-lg bg-white p-2 rounded-lg text-gray-800 text-sm tracking-wider font-poppins-regular hidden md:block md:absolute md:-top-2",
+            className: "shadow-lg bg-white p-2 rounded-lg text-gray-800 text-sm tracking-wider font-poppins-regularbg- hidden md:block md:absolute md:-top-2",
           }}
           position={center}
         />
