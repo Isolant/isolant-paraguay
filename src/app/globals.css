@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Have to add it here and add !important because using the Tailwind class won't work for some reason */
+html, body {
+  scroll-behavior: smooth !important;
+}

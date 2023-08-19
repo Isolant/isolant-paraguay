@@ -73,7 +73,7 @@ const Products = () => {
   ];
 
   return(
-    <section className="relative bg-gray-50">
+    <section className="relative bg-gray-50" id="productos">
       <div className="relative mx-auto container px-4 pt-8 md:pt-16 lg:pt-24 xl:pt-32">
         <div className="flex flex-col gap-2 text-center items-center">
           <h3 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestros productos</h3>

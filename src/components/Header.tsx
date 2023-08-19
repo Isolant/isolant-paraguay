@@ -5,11 +5,14 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = () => {
+const Header = ({ isHomepage, active }: {
+  isHomepage: boolean,
+  active?: string
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return(
-    <header className="relative py-2 px-4 bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-20 py-2 px-4 bg-white border-b border-gray-200">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link
           href="/"
@@ -25,28 +28,28 @@ const Header = () => {
           className={isOpen ? 'flex-[100%] mt-8 mb-4 text-center order-last' : 'hidden md:block'}
         >
           <ul className="flex flex-col md:flex-row md:items-baseline gap-6">
-            <li className="font-poppins-medium uppercase tracking-wider text-xs text-gray-500 hover:text-darkBlue">
+            <li className={`font-poppins-medium uppercase tracking-wider text-xs ${active === 'home' ? 'text-gray-800' : 'text-gray-500'} hover:text-darkBlue`}>
               <Link
-                href="/"
+                href="/#top"
               >
                 Inicio
               </Link>
             </li>
-            <li className="font-poppins-medium uppercase tracking-wider text-xs text-gray-500 hover:text-darkBlue">
+            <li className={`font-poppins-medium uppercase tracking-wider text-xs ${active === 'about' ? 'text-gray-800' : 'text-gray-500'} hover:text-darkBlue`}>
               <Link
                 href="/#empresa"
               >
                 Empresa
               </Link>
             </li>
-            <li className="font-poppins-medium uppercase tracking-wider text-xs text-gray-500 hover:text-darkBlue">
+            <li className={`font-poppins-medium uppercase tracking-wider text-xs ${active === 'products' ? 'text-gray-800' : 'text-gray-500'} hover:text-darkBlue`}>
               <Link
                 href="/#productos"
               >
                 Productos
               </Link>
             </li>
-            <li className="font-poppins-medium uppercase tracking-wider text-xs text-gray-500 hover:text-darkBlue">
+            <li className={`font-poppins-medium uppercase tracking-wider text-xs ${active === 'contact' ? 'text-gray-800' : 'text-gray-500'} hover:text-darkBlue`}>
               <Link
                 href="/#contacto"
               >

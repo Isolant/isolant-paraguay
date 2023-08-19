@@ -23,7 +23,10 @@ export default function Product({ params }: {
   return (
     <MDXProvider components={components}>
       <main>
-        <Header />
+        <Header
+          isHomepage={false}
+          active="products"
+        />
         <ProductContent />
         <Footer />
       </main>

@@ -4,7 +4,7 @@ import Button from '@/components/Button';
 
 const ContactForm = () => {
   return(
-    <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32">
+    <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32" id="contacto">
       <div className="flex flex-col gap-2 text-center items-center">
         <h5 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Contactanos</h5>
         <p className="max-w-lg font-poppins-regular text-gray-600">
