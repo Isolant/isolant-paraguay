@@ -50,17 +50,17 @@ const Products = () => {
       description: "Aislante con terminación blanca y alta resistencia."
     },
     {
-      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminizada.jpg",
-      product: "/images/homepage/products/rufi-aluminizada.png",
-      cta: "/productos/rufi-aluminizada",
-      title: "Rufi Aluminizada",
+      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminizado.jpg",
+      product: "/images/homepage/products/rufi-aluminizado.png",
+      cta: "/productos/rufi-aluminizado",
+      title: "Rufi Aluminizado",
       description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
     },
     {
-      thumbnail: "/images/homepage/products/thumbnails/rufi-doble-aluminizada.jpg",
-      product: "/images/homepage/products/rufi-doble-aluminizada.png",
-      cta: "/productos/rufi-doble-aluminizada",
-      title: "Rufi Doble Aluminizada",
+      thumbnail: "/images/homepage/products/thumbnails/rufi-doble-aluminio.jpg",
+      product: "/images/homepage/products/rufi-doble-aluminio.png",
+      cta: "/productos/rufi-doble-aluminio",
+      title: "Rufi Doble Aluminio",
       description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
     },
     {
