@@ -1,14 +1,29 @@
+import Image from 'next/image';
+
 import Input from '@/components/Input';
 import Textarea from '@/components/Textarea';
 import Button from '@/components/Button';
 
-const ContactForm = () => {
+const Contact = () => {
   return(
-    <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32" id="contacto">
+    <section
+      className="relative mx-auto -mt-12 md:-mt-32 container px-4 pb-8 md:pb-16 lg:pb-24 xl:pb-32"
+      id="contacto"
+    >
       <div className="flex flex-col gap-2 text-center items-center">
-        <h5 className="font-poppins-semibold text-gray-700 text-2xl md:text-3xl lg:text-4xl">Contactanos</h5>
+        <div className="relative max-w-2xl w-full h-44 md:h-96">
+          <Image
+            src="/images/products/products.png"
+            alt="Montaje de productos Isolant"
+            fill={true}
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <h5 className="font-poppins-regular text-gray-700 text-2xl md:text-3xl lg:text-4xl">
+          Conocé nuestros <strong className="font-poppins-semibold block">productos premium</strong>
+        </h5>
         <p className="max-w-lg font-poppins-regular text-gray-500">
-          Si tenes alguna consulta acerca de nuestros productos, contactate con nosotros debajo.
+          ¿Sabías que tenemos una amplia gama de productos Isolant de mejores prestaciones? <strong className="font-poppins-semibold">¡Contactate con nosotros y conocelos!</strong>
         </p>
       </div>
       <form className="grid md:grid-cols-2 gap-4 pt-4 md:pt-12">
@@ -48,4 +63,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm;
+export default Contact;

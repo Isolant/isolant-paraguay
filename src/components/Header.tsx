@@ -50,7 +50,7 @@ const Header = ({ active }: {
             </li>
             <li className={`font-poppins-medium uppercase tracking-wider text-xs ${active === 'contact' ? 'text-gray-800' : 'text-gray-500'} hover:text-darkBlue`}>
               <Link
-                href="/#contacto"
+                href="#contacto"
               >
                 Contacto
               </Link>
