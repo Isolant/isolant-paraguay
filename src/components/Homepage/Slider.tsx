@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactElement } from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+const { Splide, SplideSlide } = require('@splidejs/react-splide');
 import '@splidejs/react-splide/css';
 
 import Image from "next/image";
