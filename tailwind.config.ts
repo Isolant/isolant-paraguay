@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         lightBlue: '#15BEF0',
         darkBlue: '#263A48',
+        primary: '#15BEF0',
         secondary: '#EE2E27',
       },
     },
