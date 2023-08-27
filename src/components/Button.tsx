@@ -3,7 +3,7 @@ import Link from "next/link";
 const Button = ({ isExternal, src, type, children, classes }: {
   isExternal?: boolean;
   src?: string;
-  type?: string;
+  type?: any;
   children: React.ReactNode;
   classes: string;
 }) => {
@@ -32,7 +32,7 @@ const Button = ({ isExternal, src, type, children, classes }: {
     } else {
       return (
         <button
-          type={type}
+          type={type ? type : "button"}
           className={styles}
         >
           {children}

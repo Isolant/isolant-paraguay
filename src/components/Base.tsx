@@ -1,21 +1,16 @@
-import Link from "next/link";
+import { ReactNode } from "react";
 
 import MainHead from "@/components/MainHead";
 import Header from "./Header";
-import Footer from "./Footer";
 
 export default function Base({
-  pageTitle,
-  footerTheme,
-  footerDecorations,
   children,
-  productLines,
+}: {
+  children: ReactNode;
 }) {
   return (
     <>
-      <MainHead
-        pageTitle={pageTitle}
-      />
+      <MainHead />
       <Header />
       <main>{children}</main>
     </>
