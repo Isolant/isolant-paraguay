@@ -11,12 +11,17 @@ const ProductCard = ({ thumbnail, product, title, description, cta }: {
   return(
     <div className="relative">
       <div className="relative w-full h-60">
-        <Image
-          src={thumbnail}
-          alt={title}
-          fill={true}
-          className="rounded-lg w-full h-full object-cover"
-        />
+        <Link
+          href={cta}
+          className="hover:opacity-80 transition ease-in-out duration-100"
+        >
+          <Image
+            src={thumbnail}
+            alt={title}
+            fill={true}
+            className="rounded-lg w-full h-full object-cover"
+          />
+        </Link>
         <div className="w-20 h-28 absolute right-0 md:-right-6 -bottom-4">
           <Image
             src={product}
