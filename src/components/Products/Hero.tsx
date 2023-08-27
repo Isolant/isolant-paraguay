@@ -19,7 +19,7 @@ const Hero = ({ image, title, product, children }: {
         fill={true}
         className="opacity-60 w-full h-full object-cover object-top"
       />
-      <div className="max-w-xl absolute w-full h-full flex flex-col justify-center items-center text-center gap-4">
+      <div className="px-4 max-w-xl absolute w-full h-full flex flex-col justify-center items-center text-center gap-4">
         <h1
           className="text-2xl sm:text-4xl font-poppins-light text-white mx-auto sm:leading-tight text-shadow-md"
         >
