@@ -166,7 +166,7 @@ export const Step = ({ image, text }: {
           <h5
             className="text-gray-400 font-poppins-medium uppercase tracking-wider text-xs"
           >
-            Paso {image.slice(-5).replace('.jpg', '')}
+            Paso {image.slice(image.indexOf('step-') + 5, image.indexOf('step-') + 6).replace('.jpg', '')}
           </h5>
           <h6
             className="text-lg sm:text-xl font-poppins-semibold text-white my-2"
