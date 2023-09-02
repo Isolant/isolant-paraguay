@@ -27,9 +27,9 @@ const Slider = () => {
     >
       <SplideSlide>
         <Slide
-          image="/images/homepage/slider/slide-1.jpg" 
+          image="/images/homepage/slider/slide-3.jpg" 
           title={<span className="font-poppins-regular">Isolant <strong className="font-poppins-semibold">Paraguay</strong></span>}
-          text={<span className="font-poppins-regular">Isolant, la empresa de aislantes de espuma de polipropeno más grande de Argentina, <strong className="font-poppins-semibold">llegó a Paraguay</strong>.</span>}
+          text={<span className="font-poppins-regular">Isolant, la empresa más grande de aislantes térmicos, <strong className="font-poppins-semibold">llegó a Paraguay</strong>.</span>}
           ctaLink="#empresa"
           ctaText="Conoce Más"
           isExternal={false}
@@ -40,18 +40,8 @@ const Slider = () => {
           image="/images/homepage/slider/slide-2.jpg" 
           title={<span className="font-poppins-regular"><strong className="font-poppins-semibold">Atacama</strong></span>}
           text={<span className="font-poppins-regular">El aislante líquido para techos y muros de tu casa que baja la temperatura interior <strong className="font-poppins-semibold">de 6 a 8 grados</strong>.</span>}
-          ctaLink="#empresa"
-          ctaText="Conoce Más"
-          isExternal={false}
-        />
-      </SplideSlide>
-      <SplideSlide>
-        <Slide
-          image="/images/homepage/slider/slide-3.jpg" 
-          title={<span className="font-poppins-regular">Isolant <strong className="font-poppins-semibold">Paraguay</strong></span>}
-          text={<span className="font-poppins-regular">Isolant, la empresa de aislantes de espuma de polipropeno más grande de Argentina, <strong className="font-poppins-semibold">llegó a Paraguay</strong>.</span>}
           ctaLink="/productos/atacama"
-          ctaText="Ver producto"
+          ctaText="Conoce Más"
           isExternal={false}
         />
       </SplideSlide>
