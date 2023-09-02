@@ -71,7 +71,7 @@ const Header = ({ active }: {
             />
             <div className="hidden md:block group-hover:opacity-80 transition duration-75 ease-in-out flex flex-col ">
               <p className="text-gray-500 text-xs font-poppins-regular tracking-wide leading-none">Escribinos</p>
-              <span className="text-darkBlue text-xs font-poppins-medium tracking-wide">(54) 9 11 2235 2139</span>
+              <span className="text-darkBlue text-xs font-poppins-medium tracking-wide">+595 986 166043</span>
             </div>
           </a>
           <button
