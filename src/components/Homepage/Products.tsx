@@ -8,11 +8,25 @@ const Products = () => {
 
   const products = [
     {
-      thumbnail: "/images/homepage/products/thumbnails/atacama.jpg",
-      product: "/images/homepage/products/atacama.png",
-      cta: "/productos/atacama",
-      title:"Atacama",
-      description: "El único aislante líquido de fácil aplicación para cualquier tipo de techo o muro que baja de 6° a 8° la temperatura de tu casa."
+      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminizada.jpg",
+      product: "/images/homepage/products/rufi-aluminizada.png",
+      cta: "/productos/rufi-aluminizada",
+      title: "Rufi Aluminizada",
+      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
+    },
+    {
+      thumbnail: "/images/homepage/products/thumbnails/rufi-doble-aluminizada.jpg",
+      product: "/images/homepage/products/rufi-doble-aluminizada.png",
+      cta: "/productos/rufi-doble-aluminizada",
+      title: "Rufi Doble Aluminizada",
+      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
+    },
+    {
+      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminio.jpg",
+      product: "/images/homepage/products/rufi-aluminio.png",
+      cta: "/productos/rufi-aluminio",
+      title: "Rufi Aluminio",
+      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
     },
     {
       thumbnail: "/images/homepage/products/thumbnails/cedro-net.jpg",
@@ -22,11 +36,11 @@ const Products = () => {
       description: "Isolant CEDRO NET es el único aislante del mercado con terminación símil madera que permite decorar tus ambientes, además de aislarlos térmicamente."
     },
     {
-      thumbnail: "/images/homepage/products/thumbnails/doble-alu-net.jpg",
-      product: "/images/homepage/products/doble-alu-net.png",
-      cta: "/productos/doble-alu-net",
-      title: "Doble Alu NET",
-      description: "Aislante con red incorporada para galpones y tinglados. ¡Ahorra hasta un 40% de la mano de obra!"
+      thumbnail: "/images/homepage/products/thumbnails/atacama.jpg",
+      product: "/images/homepage/products/atacama.png",
+      cta: "/productos/atacama",
+      title:"Atacama",
+      description: "El único aislante líquido de fácil aplicación para cualquier tipo de techo o muro que baja de 6° a 8° la temperatura de tu casa."
     },
     {
       thumbnail: "/images/homepage/products/thumbnails/alu-stark-net.jpg",
@@ -36,11 +50,11 @@ const Products = () => {
       description: "Aislante con terminación blanca con red incorporada. ¡Ahorra hasta un 40% de la mano de obra!"
     },
     {
-      thumbnail: "/images/homepage/products/thumbnails/doble-alu.jpg",
-      product: "/images/homepage/products/doble-alu.png",
-      cta: "/productos/doble-alu",
-      title: "Doble Alu",
-      description: "Aislante térmico e impermeable para galpones y tinglados. ¡Solape para termo soldar patentado!"
+      thumbnail: "/images/homepage/products/thumbnails/doble-alu-net.jpg",
+      product: "/images/homepage/products/doble-alu-net.png",
+      cta: "/productos/doble-alu-net",
+      title: "Doble Alu NET",
+      description: "Aislante con red incorporada para galpones y tinglados. ¡Ahorra hasta un 40% de la mano de obra!"
     },
     {
       thumbnail: "/images/homepage/products/thumbnails/alu-stark.jpg",
@@ -50,26 +64,12 @@ const Products = () => {
       description: "Aislante con terminación blanca y alta resistencia."
     },
     {
-      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminizado.jpg",
-      product: "/images/homepage/products/rufi-aluminizado.png",
-      cta: "/productos/rufi-aluminizado",
-      title: "Rufi Aluminizado",
-      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
+      thumbnail: "/images/homepage/products/thumbnails/doble-alu.jpg",
+      product: "/images/homepage/products/doble-alu.png",
+      cta: "/productos/doble-alu",
+      title: "Doble Alu",
+      description: "Aislante térmico e impermeable para galpones y tinglados. ¡Solape para termo soldar patentado!"
     },
-    {
-      thumbnail: "/images/homepage/products/thumbnails/rufi-doble-aluminio.jpg",
-      product: "/images/homepage/products/rufi-doble-aluminio.png",
-      cta: "/productos/rufi-doble-aluminio",
-      title: "Rufi Doble Aluminio",
-      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
-    },
-    {
-      thumbnail: "/images/homepage/products/thumbnails/rufi-aluminio.jpg",
-      product: "/images/homepage/products/rufi-aluminio.png",
-      cta: "/productos/rufi-aluminio",
-      title: "Rufi Aluminio",
-      description: "Aislante térmico económico, que responde a un mercado de necesidades competitivas, sin dejar de ser una espuma de calidad Isolant."
-    }
   ];
 
   return(
