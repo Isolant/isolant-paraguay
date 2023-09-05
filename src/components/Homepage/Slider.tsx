@@ -29,7 +29,7 @@ const Slider = () => {
         <Slide
           image="/images/homepage/slider/slide-3.jpg" 
           title={<span className="font-poppins-regular">Isolant <strong className="font-poppins-semibold">Paraguay</strong></span>}
-          text={<span className="font-poppins-regular">Isolant, la empresa más grande de aislantes térmicos, <strong className="font-poppins-semibold">llegó a Paraguay</strong>.</span>}
+          text={<span className="font-poppins-regular">Isolant, la empresa más grande de aislantes térmicos <strong className="font-poppins-semibold">ya tiene fábrica en Paraguay</strong>.</span>}
           ctaLink="#empresa"
           ctaText="Conoce Más"
           isExternal={false}
