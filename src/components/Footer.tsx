@@ -17,16 +17,26 @@ const Footer = () => {
         </Link>
         <div className="text-center text-white text-xs flex flex-col gap-1 items-center font-poppins-regular">
           <p>
-            Villeta, camino a Nueva Italia 9865, Paraguay
+            Ruta Nueva Italia-Carapegua Km 6. Parque Industrial y Logístico San Gerónimo. Tacuruty, Villeta.
           </p>
           <p>
             <a
-              href="mailto:info@isolant.com.py"
+              href="mailto:ventas@isolant.com.py"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-100 ease-in-out hover:opacity-80"
             >
-              info@isolant.com.py
+              ventas@isolant.com.py
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://wa.me/595986166043"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-100 ease-in-out hover:opacity-80"
+            >
+              Tel: +595 986 166043
             </a>
           </p>
           <p>

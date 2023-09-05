@@ -59,7 +59,9 @@ const Header = ({ active }: {
         </nav>
         <div className="flex items-center gap-4">
           <a
-            href="#"
+            href="https://wa.me/595986166043"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 group"
           >
             <Image
