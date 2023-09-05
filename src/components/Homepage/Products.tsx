@@ -43,6 +43,13 @@ const Products = () => {
       description: "El único aislante líquido de fácil aplicación para cualquier tipo de techo o muro que baja de 6° a 8° la temperatura de tu casa."
     },
     {
+      thumbnail: "/images/homepage/products/thumbnails/contrapiso-acoustic.jpg",
+      product: "/images/homepage/products/contrapiso-acoustic.png",
+      cta: "/productos/contrapiso-acoustic",
+      title:"Contrapiso Acoustic",
+      description: "Membrana bicapa aislante de ruidos de impacto para entrepisos. Gracias a su solape de 5cm evita la formación de puentes acústicos."
+    },
+    {
       thumbnail: "/images/homepage/products/thumbnails/alu-stark-net.jpg",
       product: "/images/homepage/products/alu-stark-net.png",
       cta: "/productos/alu-stark-net",
