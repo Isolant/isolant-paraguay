@@ -50,7 +50,7 @@ export default function RootLayout({
       `}
     >
       <MainHead />
-      <body>{children}</body>
+      <body className="overflow-x-hidden">{children}</body>
     </html>
   )
 }
