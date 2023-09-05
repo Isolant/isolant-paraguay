@@ -78,7 +78,7 @@ const Products = () => {
         <div className="flex flex-col gap-2 text-center items-center">
           <h3 className="font-poppins-semibold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Nuestros productos</h3>
           <p className="max-w-lg font-poppins-regular text-gray-600">
-            Isolant, la empresa de aislantes de espuma de polipropeno más grande de Argentina, llegó a Paraguay.
+            Isolant, la empresa más grande de aislantes térmicos, llegó a Paraguay. Conocé nuestros productos debajo:
           </p>
         </div>
         <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8 xl:gap-12 pt-8 md:pt-12 lg:pt-16">
