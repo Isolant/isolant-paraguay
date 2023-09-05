@@ -36,7 +36,7 @@ const Map = () => {
       >
         <Marker
           label={{
-            text: "Villeta, camino a Nueva Italia 9865, Paraguay",
+            text: "Ruta Nueva Italia-Carapegua Km 6. Tacuruty, Villeta.",
             className: "shadow-lg bg-white p-2 rounded-lg text-gray-800 text-sm tracking-wider font-poppins-regularbg- hidden md:block md:absolute md:-top-2",
           }}
           position={center}
