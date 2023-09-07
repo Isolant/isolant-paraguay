@@ -48,7 +48,7 @@ const Footer = () => {
           <ul className="flex justify-center gap-3 mt-1">
             <li>
               <a
-                href="https://www.facebook.com/Isolant.Aislantes/?fref=ts"
+                href="https://www.facebook.com/people/Isolant-Paraguay/100083576551790/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition ease-in-out duration-100 hover:opacity-80"
@@ -78,7 +78,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/isolant.aislantes/"
+                href="https://www.instagram.com/isolant.paraguay/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition ease-in-out duration-100 hover:opacity-80"
