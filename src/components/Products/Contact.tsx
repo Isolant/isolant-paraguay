@@ -31,7 +31,6 @@ const Contact = () => {
         data-netlify="true"
         name="contacto"
         method="POST"
-        action="/"
         netlify-honeypot="bot-field"
       >
         {/* Honeypot */}
