@@ -40,7 +40,7 @@ const ContactForm = () => {
         />
         <Input
           type="number"
-          id="phone"
+          id="telefono"
           label="Teléfono"
           labelVisible={false}
           placeholder="Teléfono"

@@ -20,6 +20,7 @@ export default function Textarea({
       }
       <textarea
         id={id}
+        name={id}
         placeholder={placeholder}
         required={required}
         className="font-poppins-regular text-gray-600 border border-gray-300 p-3 rounded-xl w-full resize-none h-32 md:h-60"
