@@ -22,7 +22,7 @@ const ContactForm = () => {
         {/* Honeypot */}
         <input type="hidden" name="form-name" value="contacto" />
         <input name="bot-field" className="hidden" />
-        
+
         <Input
           type="text"
           id="nombre"
@@ -56,7 +56,7 @@ const ContactForm = () => {
           classes="md:col-span-full"
         />
         <Button
-          classes="bg-secondary hover:bg-primary text-white mt-2 md:col-start-2 justify-self-start md:justify-self-end"
+          classes="bg-secondary hover:bg-primary text-white mt-2 md:col-start-3 justify-self-start md:justify-self-end"
           type="submit"
         >
           Enviar consulta

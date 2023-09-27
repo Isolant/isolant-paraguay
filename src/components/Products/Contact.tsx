@@ -71,7 +71,7 @@ const Contact = () => {
           classes="md:col-span-full"
         />
         <Button
-          classes="bg-secondary hover:bg-primary text-white mt-2 md:col-start-2 justify-self-start md:justify-self-end"
+          classes="bg-secondary hover:bg-primary text-white mt-2 md:col-start-3 justify-self-start md:justify-self-end"
           type="submit"
         >
           Enviar consulta
