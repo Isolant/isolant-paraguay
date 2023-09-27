@@ -26,7 +26,18 @@ const Contact = () => {
           ¿Sabías que tenemos una amplia gama de productos Isolant de mejores prestaciones? <strong className="font-poppins-semibold">¡Contactate con nosotros y conocelos!</strong>
         </p>
       </div>
-      <form className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12">
+      <form
+        className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12"
+        data-netlify="true"
+        name="contacto"
+        method="POST"
+        action="/"
+        netlify-honeypot="bot-field"
+      >
+        {/* Honeypot */}
+        <input type="hidden" name="form-name" value="contacto" />
+        <input name="bot-field" className="hidden" />
+
         <Input
           type="text"
           id="nombre"
