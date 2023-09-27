@@ -26,7 +26,7 @@ const Contact = () => {
           ¿Sabías que tenemos una amplia gama de productos Isolant de mejores prestaciones? <strong className="font-poppins-semibold">¡Contactate con nosotros y conocelos!</strong>
         </p>
       </div>
-      <form className="grid md:grid-cols-2 gap-4 pt-4 md:pt-12">
+      <form className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12">
         <Input
           type="text"
           id="nombre"
@@ -41,6 +41,14 @@ const Contact = () => {
           label="Email"
           labelVisible={false}
           placeholder="Email"
+          required={true}
+        />
+        <Input
+          type="number"
+          id="phone"
+          label="Teléfono"
+          labelVisible={false}
+          placeholder="Teléfono"
           required={true}
         />
         <Textarea
