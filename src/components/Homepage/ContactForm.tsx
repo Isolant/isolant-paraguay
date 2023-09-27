@@ -15,6 +15,7 @@ const ContactForm = () => {
         className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12"
         data-netlify="true"
         name="contacto"
+        action="/thanks"
         method="POST"
         netlify-honeypot="bot-field"
       >
