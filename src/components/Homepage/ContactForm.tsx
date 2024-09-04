@@ -1,8 +1,39 @@
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Input from '@/components/Input';
 import Textarea from '@/components/Textarea';
 import Button from '@/components/Button';
 
 const ContactForm = () => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const myForm = event.target as HTMLFormElement;
+    const formData = new FormData(myForm);
+    const formDataString = new URLSearchParams(formData as any).toString();
+
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formDataString,
+    })
+      .then(() => toast("Mensaje enviado correctamente. Nos contactaremos a la brevedad.", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        type: "success",
+      
+      }))
+      .catch((error) => alert(error));
+  };
+
+
   return(
     <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32" id="contacto">
       <div className="flex flex-col gap-2 text-center items-center">
@@ -15,7 +46,7 @@ const ContactForm = () => {
         className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12"
         data-netlify="true"
         name="contacto"
-        action="/thanks"
+        onSubmit={handleSubmit}
         method="POST"
         netlify-honeypot="bot-field"
       >
@@ -63,6 +94,7 @@ const ContactForm = () => {
           <svg fill="none" height="10" viewBox="0 0 13 10" width="13" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="m7.86322 9.00678c.25332.25331.67386.26276.92606-.0025l3.56502-3.56501c.2609-.24812.2609-.67022.0001-.9184l-3.56498-3.574998c-.25218-.265411-.67283-.25601-.9262-.002647-.24763.247635-.24763.665925 0 .913555l2.46318 2.46322h-8.9264c-.35807 0-.65.29193-.65.65s.29193.65.65.65h8.9264l-2.46327 2.46313-.00551.00589c-.23713.25293-.24505.6671.0056.91776z" fill="#fff" fillRule="evenodd"/></svg>
         </Button>
       </form>
+      <ToastContainer autoClose={5000} />
     </section>
   )
 }
