@@ -1,102 +1,24 @@
 "use client";
 
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-import Input from '@/components/Input';
-import Textarea from '@/components/Textarea';
-import Button from '@/components/Button';
+import React, { useEffect } from 'react';
 
 const ContactForm = () => {
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const myForm = event.target as HTMLFormElement;
-    const formData = new FormData(myForm);
-    const formDataString = new URLSearchParams(formData as any).toString();
-
-    await fetch("/__forms.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formDataString,
-    })
-      .then(() => toast("Mensaje enviado correctamente. Nos contactaremos a la brevedad.", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-        type: "success",
-      
-      }))
-      .catch((error) => alert(error));
-  };
-
+  useEffect(() => {
+    const formScript = document.createElement('script')
+    formScript.setAttribute('data-b24-form', 'inline/4/z6c8i0')
+    formScript.setAttribute('data-skip-moving', 'true')
+    formScript.innerHTML = `(function(w,d,u){
+      var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+      var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+      })(window,document,'https://cdn.bitrix24.es/b26232869/crm/form/loader_4.js')`;
+    
+    const position = document.querySelector('.bitrix-form-container');
+    position?.appendChild(formScript);
+  }, [])
 
   return(
-    <section className="relative mx-auto container px-4 py-8 md:py-16 lg:py-24 xl:py-32" id="contacto">
-      <div className="flex flex-col gap-2 text-center items-center">
-        <h5 className="font-poppins-semibold text-gray-700 text-2xl md:text-3xl lg:text-4xl">Contactanos</h5>
-        <p className="max-w-lg font-poppins-regular text-gray-500">
-          Si tenes alguna consulta acerca de nuestros productos, contactate con nosotros debajo.
-        </p>
-      </div>
-      <form
-        className="grid md:grid-cols-3 gap-4 pt-4 md:pt-12"
-        data-netlify="true"
-        name="contacto"
-        onSubmit={handleSubmit}
-        method="POST"
-        netlify-honeypot="bot-field"
-      >
-        {/* Honeypot */}
-        <input type="hidden" name="form-name" value="contacto" />
-        <input name="bot-field" className="hidden" />
-
-        <Input
-          type="text"
-          id="nombre"
-          label="Nombre"
-          labelVisible={false}
-          placeholder="Nombre"
-          required={true}
-        />
-        <Input
-          type="email"
-          id="email"
-          label="Email"
-          labelVisible={false}
-          placeholder="Email"
-          required={true}
-        />
-        <Input
-          type="number"
-          id="telefono"
-          label="Teléfono"
-          labelVisible={false}
-          placeholder="Teléfono"
-          required={true}
-        />
-        <Textarea
-          id="mensaje"
-          label="Mensaje"
-          labelVisible={false}
-          placeholder="Mensaje"
-          required={true}
-          classes="md:col-span-full"
-        />
-        <Button
-          classes="bg-secondary hover:bg-primary text-white mt-2 md:col-start-3 justify-self-start md:justify-self-end"
-          type="submit"
-        >
-          Enviar consulta
-          <svg fill="none" height="10" viewBox="0 0 13 10" width="13" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="m7.86322 9.00678c.25332.25331.67386.26276.92606-.0025l3.56502-3.56501c.2609-.24812.2609-.67022.0001-.9184l-3.56498-3.574998c-.25218-.265411-.67283-.25601-.9262-.002647-.24763.247635-.24763.665925 0 .913555l2.46318 2.46322h-8.9264c-.35807 0-.65.29193-.65.65s.29193.65.65.65h8.9264l-2.46327 2.46313-.00551.00589c-.23713.25293-.24505.6671.0056.91776z" fill="#fff" fillRule="evenodd"/></svg>
-        </Button>
-      </form>
-      <ToastContainer autoClose={5000} />
+    <section className="relative mx-auto container px-4 pt-8 md:pt-16 lg:pt-24 xl:pt-32" id="contacto">
+      <div className="bitrix-form-container" />
     </section>
   )
 }
