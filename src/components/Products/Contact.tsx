@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Contact = () => {
   useEffect(() => {
     const formScript = document.createElement('script')
-    formScript.setAttribute('data-b24-form', 'inline/4/z6c8i0')
+    formScript.setAttribute('data-b24-form', 'inline/1/lxfkfi')
     formScript.setAttribute('data-skip-moving', 'true')
     formScript.innerHTML = `(function(w,d,u){
       var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
