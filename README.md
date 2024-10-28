@@ -8,14 +8,8 @@ Repo for Isolant Paraguay website: This is a simple [NextJS](https://nextjs.org)
 2. `npm install`
 3. `npm run dev`
 
-## Running things locally
-
-`npm run dev`
-
-## Building for production
+## Building for production and deploying to the server
 
 `npm run build`
-
-## Deploying to the server
 
 Currently, each push to this repo's `main` branch will trigger a new build in Netlify, and deploy it automatically.
